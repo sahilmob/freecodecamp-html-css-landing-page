@@ -143,4 +143,14 @@ body #features .feature .left i {
 body #features .feature .right > .title {
   margin-top: 0;
 }
+
+body #how-it-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
