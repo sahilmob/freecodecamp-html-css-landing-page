@@ -108,4 +108,39 @@ body #form-outer #form #submit:hover {
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
+
+body #features {
+  max-width: 1000px;
+  width: 100%;
+  margin: 60px auto;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+body #features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #features .feature .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 125px;
+  max-width: 12vw;
+  width: 100%;
+  color: darkorange;
+}
+
+body #features .feature .left i {
+  font-size: 3em;
+}
+
+body #features .feature .right > .title {
+  margin-top: 0;
+}
 /*# sourceMappingURL=style.css.map */
