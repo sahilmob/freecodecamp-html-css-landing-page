@@ -68,18 +68,25 @@ body
         margin-bottom: 0
         .feature
             display: flex
+            align-items: center
+            justify-content: center
             .left
                 display: flex
                 justify-content: center
-                height: 125px
-                max-width: 12vw
-                width: 100%
                 color: darkorange
+                margin-right: 10%
+                height: 125px
                 i
-                    font-size: 3em
+                    font-size: 2em
             .right
+                height: 125px
+                max-width: 51vw
+                width: 100%
                 > .title
-                    margin-top: 0
+                    margin: 0
+                > .description
+                    margin: 0
+                    font-size: .9em
     #how-it-works
         display: flex
         justify-content: center
@@ -144,7 +151,37 @@ body
             font-size: 0.9em
             margin-top: 5px
 
+@media(min-width: 496px) and (max-width: 720px)
+    body
+        padding: 15px 0px 0 0px
+        #header
+            #nav-bar
+                flex-direction: column
+                .nav-link
+                    text-align: center
 
+
+        #features
+            .feature
+                .left
+                    display: flex
+                    max-width: 5vw
+                    width: 100%
+                    align-items: center
+                .right
+                    height: auto
+                    max-width: 70vw
+                    width: 100%
+    #pricing
+        flex-direction: column
+        align-items:  center
+        .plan
+            max-width: 80%
+            width: 50vw !important
+
+    #foorter
+        max-width: 100%
+        width: 100%
 
 
 

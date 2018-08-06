@@ -121,6 +121,12 @@ body #features .feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body #features .feature .left {
@@ -130,18 +136,28 @@ body #features .feature .left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 125px;
-  max-width: 12vw;
-  width: 100%;
   color: darkorange;
+  margin-right: 10%;
+  height: 125px;
 }
 
 body #features .feature .left i {
-  font-size: 3em;
+  font-size: 2em;
+}
+
+body #features .feature .right {
+  height: 125px;
+  max-width: 51vw;
+  width: 100%;
 }
 
 body #features .feature .right > .title {
-  margin-top: 0;
+  margin: 0;
+}
+
+body #features .feature .right > .description {
+  margin: 0;
+  font-size: .9em;
 }
 
 body #how-it-works {
@@ -250,5 +266,52 @@ body #footer #footer-text {
   color: #444;
   font-size: 0.9em;
   margin-top: 5px;
+}
+
+@media (min-width: 496px) and (max-width: 720px) {
+  body {
+    padding: 15px 0px 0 0px;
+  }
+  body #header #nav-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #header #nav-bar .nav-link {
+    text-align: center;
+  }
+  body #features .feature .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 5vw;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #features .feature .right {
+    height: auto;
+    max-width: 70vw;
+    width: 100%;
+  }
+  #pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pricing .plan {
+    max-width: 80%;
+    width: 50vw !important;
+  }
+  #foorter {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
